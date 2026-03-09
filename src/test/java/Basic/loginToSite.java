@@ -1,3 +1,5 @@
+package Basic;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,6 +13,10 @@ public class loginToSite {
 
     /*Use @test to execute test*/
     @Test
+
+    //Method to test login functionality with valid credentials.
+    //It throws InterruptedException to handle any interruptions during the execution of the test.
+
     public void loginWithValidCredentials() throws InterruptedException {
 
         driver = new ChromeDriver();
@@ -33,7 +39,6 @@ public class loginToSite {
         System.out.println(myLearningText);
         //Assert that the txt is available
         Assert.assertEquals(myLearningText, "My Learning");
-
     }
 
 }
